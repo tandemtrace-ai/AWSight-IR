@@ -18,11 +18,15 @@ This proof-of-concept shows how to automate AWS context retrieval for IR and Sec
 
 ## How?
 
- ✅ Uploads a Lambda function ZIP file to S3
- ✅ Deploys the necessary AWS infrastructure using CloudFormation.
- ✅ Invokes the Lambda function to fetch critical security data.
- ✅ Retrieves and processes the latest IR data from S3.
- ✅ Cleans up AWS resources automatically post-execution. 
+ -   ✅ Uploads a Lambda function ZIP file to S3
+ -   ✅ Deploys the necessary AWS infrastructure using CloudFormation.
+ -   ✅ Invokes the Lambda function to fetch critical security data.
+ -   ✅ Retrieves and processes the latest IR data from S3.
+ -   ✅ Cleans up AWS resources automatically post-execution. 
+
+
+
+
  
 
 🤓🔎 Start working with your context 
