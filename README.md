@@ -29,4 +29,19 @@ Adversaries use the same APIs and methods as administrators and developers, and 
 🔹 Automation & Integration → No more manual querying—let serverless do the work.
 
 
+## Key Features
+
+- 💡 **Ideation**: Capture and save ideas effortlessly.
+- 🔖 **Bookmarks**: Import, organize, and resurface bookmarks when needed.
+- 📇 **Contacts**: Store and manage information about people you know.
+- 🐦 **Twitter Bookmarks**: Import and utilize your saved tweets.
+- 🔍 **Powerful Search**: Quickly find any saved information.
+- 💬 **Chat with Collections**: Interact with specific knowledge bases.
+- 🖼️ **Memory refresh**: Contextually shows relevant items for re-learning.
+- ✍️ (soon) **Writing Assistant**: Use a markdown editor with AI assistance for content creation.
+- 🔒 **Privacy Focused**: Ensures data security and privacy.
+- 🏠 **Self Hostable**: Open source and easy to deploy locally.
+- 🔗 **Integrations**: Compatible with Telegram, Twitter, Chrome bookmarks, Notion, and more to come.
+
+
 Cybersecurity is fundamentally a data challenge. Attackers move fast, but defenders can move faster. 
