@@ -39,3 +39,9 @@ Adversaries use the same APIs and methods as administrators and developers, and 
 
 
 Cybersecurity is fundamentally a data challenge. Attackers move fast, but defenders can move faster. 
+
+
+
+## FULL INSTALLATION INSTRUCTIONS 
+
+https://github.com/tandemtrace-ai/AWSight-IR/blob/main/how-install/README.md
