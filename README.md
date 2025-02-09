@@ -2,9 +2,9 @@
 
 
 
-### AWSight-IR
+# AWSight-IR
 
-## AWSight-IR leverages AWS native services and APIs to maintain fast visibility of your cloud infrastructure while providing powerful incident response capabilities using AI. 
+### AWSight-IR leverages AWS native services and APIs to maintain fast visibility of your cloud infrastructure while providing powerful incident response capabilities using AI. 
 
 🚀 What This Project Does
 
