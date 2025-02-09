@@ -2,8 +2,9 @@
 
 
 
-### AWS CLOUDTRAIL VIA ATHENA 
-AWSight-IR leverages AWS native services and APIs to maintain fast visibility of your cloud infrastructure while providing powerful incident response capabilities using AI. 
+### AWSight-IR
+
+## AWSight-IR leverages AWS native services and APIs to maintain fast visibility of your cloud infrastructure while providing powerful incident response capabilities using AI. 
 
 🚀 What This Project Does
 
@@ -16,6 +17,7 @@ How?
 ✅ Invokes the Lambda function to fetch critical security data.
 ✅ Retrieves and processes the latest IR data from S3.
 ✅ Cleans up AWS resources automatically post-execution. 
+
 🤓🔎 Start working with your context 
 
 💡 Why This Matters
