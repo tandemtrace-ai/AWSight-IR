@@ -35,6 +35,7 @@ Adversaries use the same APIs and methods as administrators and developers, and 
  - 🔹 AI as a Force Multiplier → Any AI API can work with this, even DeepSeek :-) 
  - 🔹 Scalability → Works across small and large AWS environments.
  - 🔹 Automation & Integration → No more manual querying—let serverless do the work.
+ 
 
 
 
@@ -44,4 +45,6 @@ Cybersecurity is fundamentally a data challenge. Attackers move fast, but defend
 
 ## FULL INSTALLATION INSTRUCTIONS 
 
-https://github.com/tandemtrace-ai/AWSight-IR/blob/main/how-install/README.md
+[Full Install](http://https://github.com/tandemtrace-ai/AWSight-IR/blob/main/how-install/README.md "Full Install")
+
+Contact - hello@tandemtrace.ai
