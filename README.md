@@ -4,11 +4,15 @@
 
 # AWSight-IR
 
-### AWSight-IR leverages AWS native services and APIs to maintain fast visibility of your cloud infrastructure while providing powerful incident response capabilities using AI. 
+AWSight-IR leverages AWS native services and APIs to maintain fast visibility of your cloud infrastructure while providing powerful incident response capabilities using AI. 
+
 
 ## 🚀 What This Project Does
 
+
 This proof-of-concept shows how to automate AWS context retrieval for IR and SecOps use cases—with AI-ready integration.
+
+
 
 ## How?
 
@@ -19,6 +23,8 @@ This proof-of-concept shows how to automate AWS context retrieval for IR and Sec
  - ✅ Cleans up AWS resources automatically post-execution. 
 
 🤓🔎 Start working with your context 
+
+
 
 ## 💡 Why This Matters
 
