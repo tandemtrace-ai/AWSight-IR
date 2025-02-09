@@ -1,0 +1,1479 @@
+{
+  "timestamp": "2025-02-09T14:01:58.935510",
+  "account_id": "774305595514",
+  "region": "eu-central-1",
+  "ec2_instances": [
+    {
+      "InstanceId": "i-08c6bf54ebfc681c2",
+      "InstanceType": "t2.large",
+      "LaunchTime": "2024-12-11T18:01:33+00:00",
+      "State": "running",
+      "PrivateIpAddress": "172.31.23.2",
+      "PublicIpAddress": "54.93.218.149",
+      "Platform": "linux",
+      "VpcId": "vpc-0744203a6bb503d43",
+      "SubnetId": "subnet-08104698c4a2cab2b",
+      "SecurityGroups": [
+        {
+          "GroupName": "fileServer-sec-group",
+          "GroupId": "sg-051306ce1aabc56e6"
+        }
+      ],
+      "Tags": [
+        {
+          "Key": "Name",
+          "Value": "prod-ubu-fileServer-02"
+        }
+      ],
+      "NetworkInterfaces": [
+        {
+          "NetworkInterfaceId": "eni-088b1d59a3323a729",
+          "PrivateIpAddresses": [
+            {
+              "Association": {
+                "IpOwnerId": "amazon",
+                "PublicDnsName": "ec2-54-93-218-149.eu-central-1.compute.amazonaws.com",
+                "PublicIp": "54.93.218.149"
+              },
+              "Primary": true,
+              "PrivateDnsName": "ip-172-31-23-2.eu-central-1.compute.internal",
+              "PrivateIpAddress": "172.31.23.2"
+            }
+          ],
+          "MacAddress": "02:74:69:05:4b:a1",
+          "SecurityGroups": [
+            {
+              "GroupName": "fileServer-sec-group",
+              "GroupId": "sg-051306ce1aabc56e6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "InstanceId": "i-013802ee7f4c62921",
+      "InstanceType": "t2.xlarge",
+      "LaunchTime": "2024-12-25T18:49:03+00:00",
+      "State": "running",
+      "PrivateIpAddress": "172.31.24.230",
+      "PublicIpAddress": "3.75.224.55",
+      "Platform": "linux",
+      "VpcId": "vpc-0744203a6bb503d43",
+      "SubnetId": "subnet-08104698c4a2cab2b",
+      "SecurityGroups": [
+        {
+          "GroupName": "launch-wizard-5",
+          "GroupId": "sg-019ef401391a0d2df"
+        }
+      ],
+      "Tags": [
+        {
+          "Key": "Name",
+          "Value": "ubu-retool-docker-09"
+        }
+      ],
+      "NetworkInterfaces": [
+        {
+          "NetworkInterfaceId": "eni-0867e4457e6836ae5",
+          "PrivateIpAddresses": [
+            {
+              "Association": {
+                "IpOwnerId": "amazon",
+                "PublicDnsName": "ec2-3-75-224-55.eu-central-1.compute.amazonaws.com",
+                "PublicIp": "3.75.224.55"
+              },
+              "Primary": true,
+              "PrivateDnsName": "ip-172-31-24-230.eu-central-1.compute.internal",
+              "PrivateIpAddress": "172.31.24.230"
+            }
+          ],
+          "MacAddress": "02:4c:3f:24:f5:d1",
+          "SecurityGroups": [
+            {
+              "GroupName": "launch-wizard-5",
+              "GroupId": "sg-019ef401391a0d2df"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "InstanceId": "i-0eae2748f72945901",
+      "InstanceType": "t2.xlarge",
+      "LaunchTime": "2025-01-29T13:52:39+00:00",
+      "State": "running",
+      "PrivateIpAddress": "172.31.18.168",
+      "PublicIpAddress": "18.197.85.187",
+      "Platform": "linux",
+      "VpcId": "vpc-0744203a6bb503d43",
+      "SubnetId": "subnet-08104698c4a2cab2b",
+      "SecurityGroups": [
+        {
+          "GroupName": "launch-wizard-5",
+          "GroupId": "sg-019ef401391a0d2df"
+        }
+      ],
+      "Tags": [
+        {
+          "Key": "Name",
+          "Value": "prod-ubu-retool-docker-08"
+        }
+      ],
+      "NetworkInterfaces": [
+        {
+          "NetworkInterfaceId": "eni-0bf2cec281cc67cff",
+          "PrivateIpAddresses": [
+            {
+              "Association": {
+                "IpOwnerId": "amazon",
+                "PublicDnsName": "ec2-18-197-85-187.eu-central-1.compute.amazonaws.com",
+                "PublicIp": "18.197.85.187"
+              },
+              "Primary": true,
+              "PrivateDnsName": "ip-172-31-18-168.eu-central-1.compute.internal",
+              "PrivateIpAddress": "172.31.18.168"
+            }
+          ],
+          "MacAddress": "02:fd:bd:52:bd:57",
+          "SecurityGroups": [
+            {
+              "GroupName": "launch-wizard-5",
+              "GroupId": "sg-019ef401391a0d2df"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "InstanceId": "i-03a8e9b2128163bff",
+      "InstanceType": "t2.medium",
+      "LaunchTime": "2025-01-14T16:41:55+00:00",
+      "State": "running",
+      "PrivateIpAddress": "172.31.30.147",
+      "PublicIpAddress": "3.71.78.249",
+      "Platform": "linux",
+      "VpcId": "vpc-0744203a6bb503d43",
+      "SubnetId": "subnet-08104698c4a2cab2b",
+      "SecurityGroups": [
+        {
+          "GroupName": "vt-sec-group",
+          "GroupId": "sg-06a5058f862b0fbff"
+        }
+      ],
+      "Tags": [
+        {
+          "Key": "Name",
+          "Value": "prod-ubu-vt-01"
+        }
+      ],
+      "NetworkInterfaces": [
+        {
+          "NetworkInterfaceId": "eni-060dd57e6c4373eb9",
+          "PrivateIpAddresses": [
+            {
+              "Association": {
+                "IpOwnerId": "amazon",
+                "PublicDnsName": "ec2-3-71-78-249.eu-central-1.compute.amazonaws.com",
+                "PublicIp": "3.71.78.249"
+              },
+              "Primary": true,
+              "PrivateDnsName": "ip-172-31-30-147.eu-central-1.compute.internal",
+              "PrivateIpAddress": "172.31.30.147"
+            }
+          ],
+          "MacAddress": "02:41:fe:d0:30:c5",
+          "SecurityGroups": [
+            {
+              "GroupName": "vt-sec-group",
+              "GroupId": "sg-06a5058f862b0fbff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "InstanceId": "i-014e10f4f9bc20d18",
+      "InstanceType": "t2.2xlarge",
+      "LaunchTime": "2025-01-27T21:20:25+00:00",
+      "State": "running",
+      "PrivateIpAddress": "172.31.19.155",
+      "PublicIpAddress": "35.159.3.237",
+      "Platform": "linux",
+      "VpcId": "vpc-0744203a6bb503d43",
+      "SubnetId": "subnet-08104698c4a2cab2b",
+      "SecurityGroups": [
+        {
+          "GroupName": "launch-wizard-5",
+          "GroupId": "sg-019ef401391a0d2df"
+        }
+      ],
+      "Tags": [
+        {
+          "Key": "Name",
+          "Value": "ubu-aws-cmdb-02"
+        }
+      ],
+      "NetworkInterfaces": [
+        {
+          "NetworkInterfaceId": "eni-015dc302904d517fb",
+          "PrivateIpAddresses": [
+            {
+              "Association": {
+                "IpOwnerId": "amazon",
+                "PublicDnsName": "ec2-35-159-3-237.eu-central-1.compute.amazonaws.com",
+                "PublicIp": "35.159.3.237"
+              },
+              "Primary": true,
+              "PrivateDnsName": "ip-172-31-19-155.eu-central-1.compute.internal",
+              "PrivateIpAddress": "172.31.19.155"
+            }
+          ],
+          "MacAddress": "02:12:c3:81:b7:e7",
+          "SecurityGroups": [
+            {
+              "GroupName": "launch-wizard-5",
+              "GroupId": "sg-019ef401391a0d2df"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "InstanceId": "i-089ee684e9d2eab3f",
+      "InstanceType": "t2.xlarge",
+      "LaunchTime": "2025-01-21T10:43:11+00:00",
+      "State": "running",
+      "PrivateIpAddress": "172.31.43.229",
+      "PublicIpAddress": "3.124.187.29",
+      "Platform": "linux",
+      "VpcId": "vpc-0744203a6bb503d43",
+      "SubnetId": "subnet-0161a167ab98650b2",
+      "SecurityGroups": [
+        {
+          "GroupName": "launch-wizard-5",
+          "GroupId": "sg-019ef401391a0d2df"
+        }
+      ],
+      "Tags": [
+        {
+          "Key": "Name",
+          "Value": "ubu-retool-docker-11"
+        }
+      ],
+      "NetworkInterfaces": [
+        {
+          "NetworkInterfaceId": "eni-0d0b58003d16920d9",
+          "PrivateIpAddresses": [
+            {
+              "Association": {
+                "IpOwnerId": "amazon",
+                "PublicDnsName": "ec2-3-124-187-29.eu-central-1.compute.amazonaws.com",
+                "PublicIp": "3.124.187.29"
+              },
+              "Primary": true,
+              "PrivateDnsName": "ip-172-31-43-229.eu-central-1.compute.internal",
+              "PrivateIpAddress": "172.31.43.229"
+            }
+          ],
+          "MacAddress": "06:4e:79:a1:d9:bf",
+          "SecurityGroups": [
+            {
+              "GroupName": "launch-wizard-5",
+              "GroupId": "sg-019ef401391a0d2df"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "InstanceId": "i-03bd95466c6174547",
+      "InstanceType": "t2.xlarge",
+      "LaunchTime": "2024-12-11T17:33:49+00:00",
+      "State": "running",
+      "PrivateIpAddress": "172.31.17.201",
+      "PublicIpAddress": "3.66.28.114",
+      "Platform": "linux",
+      "VpcId": "vpc-0744203a6bb503d43",
+      "SubnetId": "subnet-08104698c4a2cab2b",
+      "SecurityGroups": [
+        {
+          "GroupName": "launch-wizard-5",
+          "GroupId": "sg-019ef401391a0d2df"
+        }
+      ],
+      "Tags": [
+        {
+          "Key": "Name",
+          "Value": "ubu-retool-docker-02-stefan"
+        }
+      ],
+      "NetworkInterfaces": [
+        {
+          "NetworkInterfaceId": "eni-0787263b259235d1f",
+          "PrivateIpAddresses": [
+            {
+              "Association": {
+                "IpOwnerId": "amazon",
+                "PublicDnsName": "ec2-3-66-28-114.eu-central-1.compute.amazonaws.com",
+                "PublicIp": "3.66.28.114"
+              },
+              "Primary": true,
+              "PrivateDnsName": "ip-172-31-17-201.eu-central-1.compute.internal",
+              "PrivateIpAddress": "172.31.17.201"
+            }
+          ],
+          "MacAddress": "02:84:a0:f8:5d:0b",
+          "SecurityGroups": [
+            {
+              "GroupName": "launch-wizard-5",
+              "GroupId": "sg-019ef401391a0d2df"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "InstanceId": "i-0f65ac477eb6fa367",
+      "InstanceType": "t2.large",
+      "LaunchTime": "2025-01-09T07:00:19+00:00",
+      "State": "running",
+      "PrivateIpAddress": "172.31.21.89",
+      "PublicIpAddress": "18.184.225.2",
+      "Platform": "linux",
+      "VpcId": "vpc-0744203a6bb503d43",
+      "SubnetId": "subnet-08104698c4a2cab2b",
+      "SecurityGroups": [
+        {
+          "GroupName": "launch-wizard-1",
+          "GroupId": "sg-0cf9d2da75db55e9c"
+        }
+      ],
+      "Tags": [
+        {
+          "Key": "Name",
+          "Value": "ubu-athena-01"
+        }
+      ],
+      "NetworkInterfaces": [
+        {
+          "NetworkInterfaceId": "eni-0ba33211f45fcce5f",
+          "PrivateIpAddresses": [
+            {
+              "Association": {
+                "IpOwnerId": "amazon",
+                "PublicDnsName": "ec2-18-184-225-2.eu-central-1.compute.amazonaws.com",
+                "PublicIp": "18.184.225.2"
+              },
+              "Primary": true,
+              "PrivateDnsName": "ip-172-31-21-89.eu-central-1.compute.internal",
+              "PrivateIpAddress": "172.31.21.89"
+            }
+          ],
+          "MacAddress": "02:9f:8d:24:cf:9d",
+          "SecurityGroups": [
+            {
+              "GroupName": "launch-wizard-1",
+              "GroupId": "sg-0cf9d2da75db55e9c"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "InstanceId": "i-074c0ab32436d4ec8",
+      "InstanceType": "t2.medium",
+      "LaunchTime": "2025-01-20T15:16:59+00:00",
+      "State": "running",
+      "PrivateIpAddress": "172.31.22.50",
+      "PublicIpAddress": "18.193.103.14",
+      "Platform": "linux",
+      "VpcId": "vpc-0744203a6bb503d43",
+      "SubnetId": "subnet-08104698c4a2cab2b",
+      "SecurityGroups": [
+        {
+          "GroupName": "launch-wizard-1",
+          "GroupId": "sg-0cf9d2da75db55e9c"
+        }
+      ],
+      "Tags": [
+        {
+          "Key": "Name",
+          "Value": "ubu-athena-02"
+        }
+      ],
+      "NetworkInterfaces": [
+        {
+          "NetworkInterfaceId": "eni-096eb6cb1ad266401",
+          "PrivateIpAddresses": [
+            {
+              "Association": {
+                "IpOwnerId": "amazon",
+                "PublicDnsName": "ec2-18-193-103-14.eu-central-1.compute.amazonaws.com",
+                "PublicIp": "18.193.103.14"
+              },
+              "Primary": true,
+              "PrivateDnsName": "ip-172-31-22-50.eu-central-1.compute.internal",
+              "PrivateIpAddress": "172.31.22.50"
+            }
+          ],
+          "MacAddress": "02:94:cd:eb:52:ff",
+          "SecurityGroups": [
+            {
+              "GroupName": "launch-wizard-1",
+              "GroupId": "sg-0cf9d2da75db55e9c"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "InstanceId": "i-0830faf2227619769",
+      "InstanceType": "t2.large",
+      "LaunchTime": "2025-01-24T06:17:32+00:00",
+      "State": "running",
+      "PrivateIpAddress": "172.31.25.118",
+      "PublicIpAddress": "3.126.120.9",
+      "Platform": "linux",
+      "VpcId": "vpc-0744203a6bb503d43",
+      "SubnetId": "subnet-08104698c4a2cab2b",
+      "SecurityGroups": [
+        {
+          "GroupName": "launch-wizard-5",
+          "GroupId": "sg-019ef401391a0d2df"
+        }
+      ],
+      "Tags": [
+        {
+          "Key": "Name",
+          "Value": "ubu-aws-cmdb-01"
+        }
+      ],
+      "NetworkInterfaces": [
+        {
+          "NetworkInterfaceId": "eni-096380dafe968ca6a",
+          "PrivateIpAddresses": [
+            {
+              "Association": {
+                "IpOwnerId": "amazon",
+                "PublicDnsName": "ec2-3-126-120-9.eu-central-1.compute.amazonaws.com",
+                "PublicIp": "3.126.120.9"
+              },
+              "Primary": true,
+              "PrivateDnsName": "ip-172-31-25-118.eu-central-1.compute.internal",
+              "PrivateIpAddress": "172.31.25.118"
+            }
+          ],
+          "MacAddress": "02:e0:ae:4e:7d:ed",
+          "SecurityGroups": [
+            {
+              "GroupName": "launch-wizard-5",
+              "GroupId": "sg-019ef401391a0d2df"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "InstanceId": "i-0d6369849f08702dd",
+      "InstanceType": "t2.large",
+      "LaunchTime": "2025-02-04T09:00:58+00:00",
+      "State": "running",
+      "PrivateIpAddress": "172.31.24.221",
+      "PublicIpAddress": "18.153.210.120",
+      "Platform": "linux",
+      "VpcId": "vpc-0744203a6bb503d43",
+      "SubnetId": "subnet-08104698c4a2cab2b",
+      "SecurityGroups": [
+        {
+          "GroupName": "launch-wizard-5",
+          "GroupId": "sg-019ef401391a0d2df"
+        }
+      ],
+      "Tags": [
+        {
+          "Key": "Name",
+          "Value": "ubu-rilldata-01"
+        }
+      ],
+      "NetworkInterfaces": [
+        {
+          "NetworkInterfaceId": "eni-0f25acbb14aa70f90",
+          "PrivateIpAddresses": [
+            {
+              "Association": {
+                "IpOwnerId": "amazon",
+                "PublicDnsName": "ec2-18-153-210-120.eu-central-1.compute.amazonaws.com",
+                "PublicIp": "18.153.210.120"
+              },
+              "Primary": true,
+              "PrivateDnsName": "ip-172-31-24-221.eu-central-1.compute.internal",
+              "PrivateIpAddress": "172.31.24.221"
+            }
+          ],
+          "MacAddress": "02:0b:ce:9d:d8:4d",
+          "SecurityGroups": [
+            {
+              "GroupName": "launch-wizard-5",
+              "GroupId": "sg-019ef401391a0d2df"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "InstanceId": "i-09caa08102368ea47",
+      "InstanceType": "t2.medium",
+      "LaunchTime": "2025-02-06T08:01:15+00:00",
+      "State": "running",
+      "PrivateIpAddress": "172.31.26.92",
+      "PublicIpAddress": "18.196.136.200",
+      "Platform": "linux",
+      "VpcId": "vpc-0744203a6bb503d43",
+      "SubnetId": "subnet-08104698c4a2cab2b",
+      "SecurityGroups": [
+        {
+          "GroupName": "launch-wizard-5",
+          "GroupId": "sg-019ef401391a0d2df"
+        }
+      ],
+      "Tags": [
+        {
+          "Key": "Name",
+          "Value": "ubu-aws-cmdb-03"
+        }
+      ],
+      "NetworkInterfaces": [
+        {
+          "NetworkInterfaceId": "eni-090fdd31ab17c2489",
+          "PrivateIpAddresses": [
+            {
+              "Association": {
+                "IpOwnerId": "amazon",
+                "PublicDnsName": "ec2-18-196-136-200.eu-central-1.compute.amazonaws.com",
+                "PublicIp": "18.196.136.200"
+              },
+              "Primary": true,
+              "PrivateDnsName": "ip-172-31-26-92.eu-central-1.compute.internal",
+              "PrivateIpAddress": "172.31.26.92"
+            }
+          ],
+          "MacAddress": "02:06:73:65:28:b1",
+          "SecurityGroups": [
+            {
+              "GroupName": "launch-wizard-5",
+              "GroupId": "sg-019ef401391a0d2df"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "security_groups": [
+    {
+      "GroupId": "sg-019ef401391a0d2df",
+      "GroupName": "launch-wizard-5",
+      "Description": "launch-wizard-5 created 2024-12-11T17:33:09.753Z",
+      "VpcId": "vpc-0744203a6bb503d43",
+      "InboundRules": [
+        {
+          "FromPort": 0,
+          "IpProtocol": "tcp",
+          "IpRanges": [
+            {
+              "CidrIp": "173.245.48.0/20",
+              "Description": "cloudflare"
+            },
+            {
+              "CidrIp": "103.21.244.0/22",
+              "Description": "cloudflare"
+            },
+            {
+              "CidrIp": "103.22.200.0/22",
+              "Description": "cloudflare2"
+            },
+            {
+              "CidrIp": "103.31.4.0/22",
+              "Description": "cloudflare2"
+            },
+            {
+              "CidrIp": "141.101.64.0/18",
+              "Description": "cloudflare2"
+            },
+            {
+              "CidrIp": "108.162.192.0/18",
+              "Description": "cloudflare2"
+            },
+            {
+              "CidrIp": "190.93.240.0/20",
+              "Description": "cloudflare2"
+            },
+            {
+              "CidrIp": "188.114.96.0/20",
+              "Description": "cloudflare2"
+            },
+            {
+              "CidrIp": "197.234.240.0/22",
+              "Description": "cloudflare2"
+            },
+            {
+              "CidrIp": "198.41.128.0/17",
+              "Description": "cloudflare2"
+            },
+            {
+              "CidrIp": "162.158.0.0/15",
+              "Description": "cloudflare2"
+            },
+            {
+              "CidrIp": "104.16.0.0/13",
+              "Description": "cloudflare2"
+            },
+            {
+              "CidrIp": "104.24.0.0/14",
+              "Description": "cloudflare2"
+            },
+            {
+              "CidrIp": "172.64.0.0/13",
+              "Description": "cloudflare2"
+            },
+            {
+              "CidrIp": "131.0.72.0/22",
+              "Description": "cloudflare2"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": [],
+          "ToPort": 65535,
+          "UserIdGroupPairs": []
+        },
+        {
+          "IpProtocol": "-1",
+          "IpRanges": [
+            {
+              "CidrIp": "81.34.23.183/32",
+              "Description": "Almog "
+            },
+            {
+              "CidrIp": "213.229.181.198/32",
+              "Description": "spaces temp almog"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": [],
+          "UserIdGroupPairs": []
+        },
+        {
+          "FromPort": 3000,
+          "IpProtocol": "tcp",
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0",
+              "Description": "retool access"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": [],
+          "ToPort": 3000,
+          "UserIdGroupPairs": []
+        }
+      ],
+      "OutboundRules": [
+        {
+          "IpProtocol": "-1",
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": [],
+          "UserIdGroupPairs": []
+        }
+      ]
+    },
+    {
+      "GroupId": "sg-00a8bb18b420bb26e",
+      "GroupName": "duck-sec-01",
+      "Description": "for stefan temp",
+      "VpcId": "vpc-0744203a6bb503d43",
+      "InboundRules": [
+        {
+          "IpProtocol": "-1",
+          "IpRanges": [
+            {
+              "CidrIp": "81.34.23.183/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": [],
+          "UserIdGroupPairs": []
+        }
+      ],
+      "OutboundRules": [
+        {
+          "IpProtocol": "-1",
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0",
+              "Description": "almog"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": [],
+          "UserIdGroupPairs": []
+        }
+      ]
+    },
+    {
+      "GroupId": "sg-0aa4ca475a56a8eb1",
+      "GroupName": "default",
+      "Description": "default VPC security group",
+      "VpcId": "vpc-0744203a6bb503d43",
+      "InboundRules": [
+        {
+          "IpProtocol": "-1",
+          "IpRanges": [],
+          "Ipv6Ranges": [],
+          "PrefixListIds": [],
+          "UserIdGroupPairs": [
+            {
+              "GroupId": "sg-0aa4ca475a56a8eb1",
+              "UserId": "774305595514"
+            }
+          ]
+        }
+      ],
+      "OutboundRules": [
+        {
+          "IpProtocol": "-1",
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": [],
+          "UserIdGroupPairs": []
+        }
+      ]
+    },
+    {
+      "GroupId": "sg-0cf9d2da75db55e9c",
+      "GroupName": "launch-wizard-1",
+      "Description": "launch-wizard-1 created 2025-01-09T06:59:48.280Z",
+      "VpcId": "vpc-0744203a6bb503d43",
+      "InboundRules": [
+        {
+          "FromPort": 22,
+          "IpProtocol": "tcp",
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": [],
+          "ToPort": 22,
+          "UserIdGroupPairs": []
+        }
+      ],
+      "OutboundRules": [
+        {
+          "IpProtocol": "-1",
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": [],
+          "UserIdGroupPairs": []
+        }
+      ]
+    },
+    {
+      "GroupId": "sg-01172a3d8960e18ed",
+      "GroupName": "launch-wizard-6",
+      "Description": "launch-wizard-6 created 2024-12-11T18:01:08.444Z",
+      "VpcId": "vpc-0744203a6bb503d43",
+      "InboundRules": [
+        {
+          "IpProtocol": "-1",
+          "IpRanges": [
+            {
+              "CidrIp": "81.34.23.183/32"
+            },
+            {
+              "CidrIp": "142.132.143.166/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": [],
+          "UserIdGroupPairs": []
+        },
+        {
+          "FromPort": 22,
+          "IpProtocol": "tcp",
+          "IpRanges": [
+            {
+              "CidrIp": "81.34.23.183/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": [],
+          "ToPort": 22,
+          "UserIdGroupPairs": []
+        },
+        {
+          "FromPort": 5000,
+          "IpProtocol": "tcp",
+          "IpRanges": [
+            {
+              "CidrIp": "18.196.100.21/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": [],
+          "ToPort": 5000,
+          "UserIdGroupPairs": []
+        }
+      ],
+      "OutboundRules": [
+        {
+          "IpProtocol": "-1",
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": [],
+          "UserIdGroupPairs": []
+        }
+      ]
+    },
+    {
+      "GroupId": "sg-06a5058f862b0fbff",
+      "GroupName": "vt-sec-group",
+      "Description": "virus total rules",
+      "VpcId": "vpc-0744203a6bb503d43",
+      "InboundRules": [
+        {
+          "FromPort": 8000,
+          "IpProtocol": "tcp",
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0",
+              "Description": "vt api access"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": [],
+          "ToPort": 8000,
+          "UserIdGroupPairs": []
+        }
+      ],
+      "OutboundRules": [
+        {
+          "IpProtocol": "-1",
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": [],
+          "UserIdGroupPairs": []
+        }
+      ]
+    },
+    {
+      "GroupId": "sg-051306ce1aabc56e6",
+      "GroupName": "fileServer-sec-group",
+      "Description": "fileServer-sec-group",
+      "VpcId": "vpc-0744203a6bb503d43",
+      "InboundRules": [
+        {
+          "IpProtocol": "-1",
+          "IpRanges": [
+            {
+              "CidrIp": "81.34.23.183/32"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": [],
+          "UserIdGroupPairs": []
+        },
+        {
+          "FromPort": 5000,
+          "IpProtocol": "tcp",
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": [],
+          "ToPort": 5000,
+          "UserIdGroupPairs": []
+        }
+      ],
+      "OutboundRules": [
+        {
+          "IpProtocol": "-1",
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": [],
+          "UserIdGroupPairs": []
+        }
+      ]
+    }
+  ],
+  "iam_configuration": {
+    "Users": [
+      {
+        "UserName": "admin_cmdb",
+        "UserId": "AIDA3ISBVYB5KS6PB4FTH",
+        "Arn": "arn:aws:iam::774305595514:user/admin_cmdb",
+        "CreateDate": "2025-01-24T06:39:42+00:00",
+        "AccessKeys": [
+          {
+            "AccessKeyId": "AKIA3ISBVYB5AJSS2DOY",
+            "Status": "Active",
+            "CreateDate": "2025-01-24T06:40:09+00:00"
+          }
+        ],
+        "AttachedPolicies": [
+          {
+            "PolicyName": "cmdb_all",
+            "PolicyArn": "arn:aws:iam::774305595514:policy/cmdb_all"
+          }
+        ]
+      },
+      {
+        "UserName": "athena-api-user",
+        "UserId": "AIDA3ISBVYB5PPB66GO2K",
+        "Arn": "arn:aws:iam::774305595514:user/athena-api-user",
+        "CreateDate": "2025-01-08T15:39:13+00:00",
+        "AccessKeys": [
+          {
+            "AccessKeyId": "AKIA3ISBVYB5J3TMSI5N",
+            "Status": "Active",
+            "CreateDate": "2025-01-08T15:40:04+00:00"
+          }
+        ],
+        "AttachedPolicies": [
+          {
+            "PolicyName": "AmazonAthenaFullAccess",
+            "PolicyArn": "arn:aws:iam::aws:policy/AmazonAthenaFullAccess"
+          },
+          {
+            "PolicyName": "AmazonS3ReadOnlyAccess",
+            "PolicyArn": "arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess"
+          },
+          {
+            "PolicyName": "AmazonS3FullAccess",
+            "PolicyArn": "arn:aws:iam::aws:policy/AmazonS3FullAccess"
+          }
+        ]
+      },
+      {
+        "UserName": "elonm",
+        "UserId": "AIDA3ISBVYB5IPBUL7VWN",
+        "Arn": "arn:aws:iam::774305595514:user/elonm",
+        "CreateDate": "2025-01-23T14:09:33+00:00",
+        "AccessKeys": [
+          {
+            "AccessKeyId": "AKIA3ISBVYB5GELU7DD4",
+            "Status": "Active",
+            "CreateDate": "2025-01-23T14:12:26+00:00"
+          }
+        ],
+        "AttachedPolicies": []
+      },
+      {
+        "UserName": "prohacker123",
+        "UserId": "AIDA3ISBVYB5EUYKHBTEK",
+        "Arn": "arn:aws:iam::774305595514:user/prohacker123",
+        "CreateDate": "2025-02-03T17:26:58+00:00",
+        "AccessKeys": [
+          {
+            "AccessKeyId": "AKIA3ISBVYB5FGGCPFIU",
+            "Status": "Active",
+            "CreateDate": "2025-02-03T17:40:00+00:00"
+          }
+        ],
+        "AttachedPolicies": [
+          {
+            "PolicyName": "cmdb_all",
+            "PolicyArn": "arn:aws:iam::774305595514:policy/cmdb_all"
+          },
+          {
+            "PolicyName": "AdministratorAccess",
+            "PolicyArn": "arn:aws:iam::aws:policy/AdministratorAccess"
+          }
+        ]
+      },
+      {
+        "UserName": "s3-user",
+        "UserId": "AIDA3ISBVYB5ASSLONIP7",
+        "Arn": "arn:aws:iam::774305595514:user/s3-user",
+        "CreateDate": "2024-12-16T07:53:28+00:00",
+        "AccessKeys": [
+          {
+            "AccessKeyId": "AKIA3ISBVYB5HZHSBBPW",
+            "Status": "Active",
+            "CreateDate": "2024-12-16T07:53:51+00:00"
+          }
+        ],
+        "AttachedPolicies": [
+          {
+            "PolicyName": "AmazonS3FullAccess",
+            "PolicyArn": "arn:aws:iam::aws:policy/AmazonS3FullAccess"
+          }
+        ]
+      }
+    ],
+    "Roles": [
+      {
+        "Path": "/aws-service-role/guardduty.amazonaws.com/",
+        "RoleName": "AWSServiceRoleForAmazonGuardDuty",
+        "RoleId": "AROA3ISBVYB5E2GSUUFVN",
+        "Arn": "arn:aws:iam::774305595514:role/aws-service-role/guardduty.amazonaws.com/AWSServiceRoleForAmazonGuardDuty",
+        "CreateDate": "2024-12-15 12:49:59+00:00",
+        "AssumeRolePolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "guardduty.amazonaws.com"
+              },
+              "Action": "sts:AssumeRole"
+            }
+          ]
+        },
+        "Description": "A service-linked role required for Amazon GuardDuty to access your resources. ",
+        "MaxSessionDuration": 3600
+      },
+      {
+        "Path": "/aws-service-role/malware-protection.guardduty.amazonaws.com/",
+        "RoleName": "AWSServiceRoleForAmazonGuardDutyMalwareProtection",
+        "RoleId": "AROA3ISBVYB5KT2L73ZXI",
+        "Arn": "arn:aws:iam::774305595514:role/aws-service-role/malware-protection.guardduty.amazonaws.com/AWSServiceRoleForAmazonGuardDutyMalwareProtection",
+        "CreateDate": "2024-12-15 12:49:59+00:00",
+        "AssumeRolePolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "malware-protection.guardduty.amazonaws.com"
+              },
+              "Action": "sts:AssumeRole"
+            }
+          ]
+        },
+        "Description": "A service-linked role required for Amazon GuardDuty Malware Scan to access your resources. ",
+        "MaxSessionDuration": 3600
+      },
+      {
+        "Path": "/aws-service-role/ops.apigateway.amazonaws.com/",
+        "RoleName": "AWSServiceRoleForAPIGateway",
+        "RoleId": "AROA3ISBVYB5LOEQWGYCY",
+        "Arn": "arn:aws:iam::774305595514:role/aws-service-role/ops.apigateway.amazonaws.com/AWSServiceRoleForAPIGateway",
+        "CreateDate": "2025-01-28 07:26:31+00:00",
+        "AssumeRolePolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "ops.apigateway.amazonaws.com"
+              },
+              "Action": "sts:AssumeRole"
+            }
+          ]
+        },
+        "Description": "The Service Linked Role is used by Amazon API Gateway.",
+        "MaxSessionDuration": 3600
+      },
+      {
+        "Path": "/aws-service-role/contract.iq.amazonaws.com/",
+        "RoleName": "AWSServiceRoleForAWSIQContract",
+        "RoleId": "AROA3ISBVYB5IWYQFQJT7",
+        "Arn": "arn:aws:iam::774305595514:role/aws-service-role/contract.iq.amazonaws.com/AWSServiceRoleForAWSIQContract",
+        "CreateDate": "2025-01-06 10:59:07+00:00",
+        "AssumeRolePolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "contract.iq.amazonaws.com"
+              },
+              "Action": "sts:AssumeRole"
+            }
+          ]
+        },
+        "Description": "Service-linked role used by AWS IQ to process payments",
+        "MaxSessionDuration": 3600
+      },
+      {
+        "Path": "/aws-service-role/organizations.amazonaws.com/",
+        "RoleName": "AWSServiceRoleForOrganizations",
+        "RoleId": "AROA3ISBVYB5IAXCCUE44",
+        "Arn": "arn:aws:iam::774305595514:role/aws-service-role/organizations.amazonaws.com/AWSServiceRoleForOrganizations",
+        "CreateDate": "2025-01-10 13:24:50+00:00",
+        "AssumeRolePolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "organizations.amazonaws.com"
+              },
+              "Action": "sts:AssumeRole"
+            }
+          ]
+        },
+        "Description": "Service-linked role used by AWS Organizations to enable integration of other AWS services with Organizations.",
+        "MaxSessionDuration": 3600
+      },
+      {
+        "Path": "/aws-service-role/sso.amazonaws.com/",
+        "RoleName": "AWSServiceRoleForSSO",
+        "RoleId": "AROA3ISBVYB5D74METZZT",
+        "Arn": "arn:aws:iam::774305595514:role/aws-service-role/sso.amazonaws.com/AWSServiceRoleForSSO",
+        "CreateDate": "2025-01-10 13:24:52+00:00",
+        "AssumeRolePolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "sso.amazonaws.com"
+              },
+              "Action": "sts:AssumeRole"
+            }
+          ]
+        },
+        "Description": "Service-linked role used by AWS SSO to manage AWS resources, including IAM roles, policies and SAML IdP on your behalf.",
+        "MaxSessionDuration": 3600
+      },
+      {
+        "Path": "/aws-service-role/support.amazonaws.com/",
+        "RoleName": "AWSServiceRoleForSupport",
+        "RoleId": "AROA3ISBVYB5OWU35KUMK",
+        "Arn": "arn:aws:iam::774305595514:role/aws-service-role/support.amazonaws.com/AWSServiceRoleForSupport",
+        "CreateDate": "2024-11-04 14:34:40+00:00",
+        "AssumeRolePolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "support.amazonaws.com"
+              },
+              "Action": "sts:AssumeRole"
+            }
+          ]
+        },
+        "Description": "Enables resource access for AWS to provide billing, administrative and support services",
+        "MaxSessionDuration": 3600
+      },
+      {
+        "Path": "/aws-service-role/trustedadvisor.amazonaws.com/",
+        "RoleName": "AWSServiceRoleForTrustedAdvisor",
+        "RoleId": "AROA3ISBVYB5HO7PHPUWS",
+        "Arn": "arn:aws:iam::774305595514:role/aws-service-role/trustedadvisor.amazonaws.com/AWSServiceRoleForTrustedAdvisor",
+        "CreateDate": "2024-11-04 14:34:40+00:00",
+        "AssumeRolePolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "trustedadvisor.amazonaws.com"
+              },
+              "Action": "sts:AssumeRole"
+            }
+          ]
+        },
+        "Description": "Access for the AWS Trusted Advisor Service to help reduce cost, increase performance, and improve security of your AWS environment.",
+        "MaxSessionDuration": 3600
+      },
+      {
+        "Path": "/",
+        "RoleName": "ir-cmdb-12-prod-lambda-role-eu-central-1",
+        "RoleId": "AROA3ISBVYB5I2YOGAQ4A",
+        "Arn": "arn:aws:iam::774305595514:role/ir-cmdb-12-prod-lambda-role-eu-central-1",
+        "CreateDate": "2025-01-29 12:29:55+00:00",
+        "AssumeRolePolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com"
+              },
+              "Action": "sts:AssumeRole"
+            }
+          ]
+        },
+        "Description": "",
+        "MaxSessionDuration": 3600
+      },
+      {
+        "Path": "/",
+        "RoleName": "ir-cmdb-20250129-133457-prod-lambda-role-eu-central-1",
+        "RoleId": "AROA3ISBVYB5K3GC4NIBJ",
+        "Arn": "arn:aws:iam::774305595514:role/ir-cmdb-20250129-133457-prod-lambda-role-eu-central-1",
+        "CreateDate": "2025-01-29 13:35:23+00:00",
+        "AssumeRolePolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com"
+              },
+              "Action": "sts:AssumeRole"
+            }
+          ]
+        },
+        "Description": "",
+        "MaxSessionDuration": 3600
+      },
+      {
+        "Path": "/",
+        "RoleName": "ir-cmdb-20250129-133936-prod-lambda-role-eu-central-1",
+        "RoleId": "AROA3ISBVYB5EJEA6GET4",
+        "Arn": "arn:aws:iam::774305595514:role/ir-cmdb-20250129-133936-prod-lambda-role-eu-central-1",
+        "CreateDate": "2025-01-29 13:40:02+00:00",
+        "AssumeRolePolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com"
+              },
+              "Action": "sts:AssumeRole"
+            }
+          ]
+        },
+        "Description": "",
+        "MaxSessionDuration": 3600
+      },
+      {
+        "Path": "/",
+        "RoleName": "ir-cmdb-20250129-140257-prod-lambda-role-eu-central-1",
+        "RoleId": "AROA3ISBVYB5P3J5455TB",
+        "Arn": "arn:aws:iam::774305595514:role/ir-cmdb-20250129-140257-prod-lambda-role-eu-central-1",
+        "CreateDate": "2025-01-29 14:03:24+00:00",
+        "AssumeRolePolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com"
+              },
+              "Action": "sts:AssumeRole"
+            }
+          ]
+        },
+        "Description": "",
+        "MaxSessionDuration": 3600
+      },
+      {
+        "Path": "/",
+        "RoleName": "ir-cmdb-20250209-140057-prod-lambda-role-eu-central-1",
+        "RoleId": "AROA3ISBVYB5LN76WQLLB",
+        "Arn": "arn:aws:iam::774305595514:role/ir-cmdb-20250209-140057-prod-lambda-role-eu-central-1",
+        "CreateDate": "2025-02-09 14:01:23+00:00",
+        "AssumeRolePolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com"
+              },
+              "Action": "sts:AssumeRole"
+            }
+          ]
+        },
+        "Description": "",
+        "MaxSessionDuration": 3600
+      },
+      {
+        "Path": "/",
+        "RoleName": "ir-cmdb-stack-01-prod-lambda-role-eu-central-1",
+        "RoleId": "AROA3ISBVYB5OCUDAYRF7",
+        "Arn": "arn:aws:iam::774305595514:role/ir-cmdb-stack-01-prod-lambda-role-eu-central-1",
+        "CreateDate": "2025-01-29 13:30:06+00:00",
+        "AssumeRolePolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com"
+              },
+              "Action": "sts:AssumeRole"
+            }
+          ]
+        },
+        "Description": "",
+        "MaxSessionDuration": 3600
+      }
+    ],
+    "Policies": []
+  },
+  "vpc_configuration": {
+    "VPCs": [
+      {
+        "CidrBlock": "172.31.0.0/16",
+        "DhcpOptionsId": "dopt-0f3d3b58a9dce017f",
+        "State": "available",
+        "VpcId": "vpc-0744203a6bb503d43",
+        "OwnerId": "774305595514",
+        "InstanceTenancy": "default",
+        "CidrBlockAssociationSet": [
+          {
+            "AssociationId": "vpc-cidr-assoc-01a7bb7ab4c72fb72",
+            "CidrBlock": "172.31.0.0/16",
+            "CidrBlockState": {
+              "State": "associated"
+            }
+          }
+        ],
+        "IsDefault": true
+      }
+    ],
+    "Subnets": [
+      {
+        "AvailabilityZone": "eu-central-1a",
+        "AvailabilityZoneId": "euc1-az2",
+        "AvailableIpAddressCount": 4080,
+        "CidrBlock": "172.31.16.0/20",
+        "DefaultForAz": true,
+        "MapPublicIpOnLaunch": true,
+        "MapCustomerOwnedIpOnLaunch": false,
+        "State": "available",
+        "SubnetId": "subnet-08104698c4a2cab2b",
+        "VpcId": "vpc-0744203a6bb503d43",
+        "OwnerId": "774305595514",
+        "AssignIpv6AddressOnCreation": false,
+        "Ipv6CidrBlockAssociationSet": [],
+        "SubnetArn": "arn:aws:ec2:eu-central-1:774305595514:subnet/subnet-08104698c4a2cab2b",
+        "EnableDns64": false,
+        "Ipv6Native": false,
+        "PrivateDnsNameOptionsOnLaunch": {
+          "HostnameType": "ip-name",
+          "EnableResourceNameDnsARecord": false,
+          "EnableResourceNameDnsAAAARecord": false
+        }
+      },
+      {
+        "AvailabilityZone": "eu-central-1b",
+        "AvailabilityZoneId": "euc1-az3",
+        "AvailableIpAddressCount": 4090,
+        "CidrBlock": "172.31.32.0/20",
+        "DefaultForAz": true,
+        "MapPublicIpOnLaunch": true,
+        "MapCustomerOwnedIpOnLaunch": false,
+        "State": "available",
+        "SubnetId": "subnet-0161a167ab98650b2",
+        "VpcId": "vpc-0744203a6bb503d43",
+        "OwnerId": "774305595514",
+        "AssignIpv6AddressOnCreation": false,
+        "Ipv6CidrBlockAssociationSet": [],
+        "SubnetArn": "arn:aws:ec2:eu-central-1:774305595514:subnet/subnet-0161a167ab98650b2",
+        "EnableDns64": false,
+        "Ipv6Native": false,
+        "PrivateDnsNameOptionsOnLaunch": {
+          "HostnameType": "ip-name",
+          "EnableResourceNameDnsARecord": false,
+          "EnableResourceNameDnsAAAARecord": false
+        }
+      },
+      {
+        "AvailabilityZone": "eu-central-1c",
+        "AvailabilityZoneId": "euc1-az1",
+        "AvailableIpAddressCount": 4091,
+        "CidrBlock": "172.31.0.0/20",
+        "DefaultForAz": true,
+        "MapPublicIpOnLaunch": true,
+        "MapCustomerOwnedIpOnLaunch": false,
+        "State": "available",
+        "SubnetId": "subnet-09486c625092168dc",
+        "VpcId": "vpc-0744203a6bb503d43",
+        "OwnerId": "774305595514",
+        "AssignIpv6AddressOnCreation": false,
+        "Ipv6CidrBlockAssociationSet": [],
+        "SubnetArn": "arn:aws:ec2:eu-central-1:774305595514:subnet/subnet-09486c625092168dc",
+        "EnableDns64": false,
+        "Ipv6Native": false,
+        "PrivateDnsNameOptionsOnLaunch": {
+          "HostnameType": "ip-name",
+          "EnableResourceNameDnsARecord": false,
+          "EnableResourceNameDnsAAAARecord": false
+        }
+      }
+    ],
+    "RoutesTables": [],
+    "InternetGateways": [
+      {
+        "Attachments": [
+          {
+            "State": "available",
+            "VpcId": "vpc-0744203a6bb503d43"
+          }
+        ],
+        "InternetGatewayId": "igw-05f6aafb2b6459357",
+        "OwnerId": "774305595514",
+        "Tags": []
+      }
+    ],
+    "NATGateways": [],
+    "RouteTables": [
+      {
+        "Associations": [
+          {
+            "Main": true,
+            "RouteTableAssociationId": "rtbassoc-04476c37022074de9",
+            "RouteTableId": "rtb-0b339951406f25476",
+            "AssociationState": {
+              "State": "associated"
+            }
+          }
+        ],
+        "PropagatingVgws": [],
+        "RouteTableId": "rtb-0b339951406f25476",
+        "Routes": [
+          {
+            "DestinationCidrBlock": "172.31.0.0/16",
+            "GatewayId": "local",
+            "Origin": "CreateRouteTable",
+            "State": "active"
+          },
+          {
+            "DestinationCidrBlock": "0.0.0.0/0",
+            "GatewayId": "igw-05f6aafb2b6459357",
+            "Origin": "CreateRoute",
+            "State": "active"
+          }
+        ],
+        "Tags": [],
+        "VpcId": "vpc-0744203a6bb503d43",
+        "OwnerId": "774305595514"
+      }
+    ]
+  }
+}

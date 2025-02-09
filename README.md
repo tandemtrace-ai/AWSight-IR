@@ -1,2 +1,1 @@
-# AWSight-IR
-AWS context retrieval for IR and SecOps
+# IR-AWS-CMDB

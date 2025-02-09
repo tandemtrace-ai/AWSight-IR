@@ -1,0 +1,152 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: 'IR CMDB Infrastructure for Incident Response'
+
+Parameters:
+  Environment:
+    Type: String
+    Default: prod
+    AllowedValues: [dev, prod]
+    Description: Environment for deployment
+
+  RetentionDays:
+    Type: Number
+    Default: 90
+    Description: Days to retain IR data
+    MinValue: 1
+    MaxValue: 365
+
+Resources:
+  # S3 Bucket for IR data
+  IRDataBucket:
+    Type: AWS::S3::Bucket
+    DeletionPolicy: Retain
+    Properties:
+      BucketName: !Sub '${AWS::StackName}-${Environment}-ir-data-${AWS::AccountId}-${AWS::Region}'
+      VersioningConfiguration:
+        Status: Enabled
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+      LifecycleConfiguration:
+        Rules:
+          - Id: DataRetention
+            Status: Enabled
+            ExpirationInDays: !Ref RetentionDays
+            NoncurrentVersionExpirationInDays: !Ref RetentionDays
+
+  IRDataBucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref IRDataBucket
+      PolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Sid: RequireEncryptedTransport
+            Effect: Deny
+            Principal: '*'
+            Action: s3:*
+            Resource:
+              - !Sub '${IRDataBucket.Arn}/*'
+              - !GetAtt IRDataBucket.Arn
+            Condition:
+              Bool:
+                aws:SecureTransport: false
+
+  # Lambda execution role
+  IRLambdaRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: !Sub '${AWS::StackName}-${Environment}-lambda-role-${AWS::Region}'
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+      Policies:
+        - PolicyName: IRDataAccess
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action:
+                  - s3:PutObject
+                  - s3:GetObject
+                  - s3:ListBucket
+                Resource:
+                  - !Sub '${IRDataBucket.Arn}/*'
+                  - !GetAtt IRDataBucket.Arn
+              - Effect: Allow
+                Action:
+                  - ec2:Describe*
+                  - iam:List*
+                  - iam:Get*
+                  - cloudtrail:LookupEvents
+                  - cloudtrail:GetTrailStatus
+                  - config:Get*
+                  - config:List*
+                  - cloudwatch:GetMetricData
+                Resource: '*'
+      Tags:
+        - Key: Environment
+          Value: !Ref Environment
+        - Key: Service
+          Value: IR-CMDB
+
+  # Data collection Lambda
+  IRCollectorFunction:
+    Type: AWS::Lambda::Function
+    DependsOn: IRLambdaRole
+    Properties:
+      FunctionName: !Sub '${AWS::StackName}-${Environment}-collector-${AWS::Region}'
+      Handler: asset_collector.lambda_handler
+      Role: !GetAtt IRLambdaRole.Arn
+      Code:
+        S3Bucket: !Sub 'ir-cmdb-deployment-${AWS::AccountId}'
+        S3Key: lambda/ir-collector.zip
+      Runtime: python3.9
+      Timeout: 300
+      MemorySize: 512
+      Environment:
+        Variables:
+          BUCKET_NAME: !Ref IRDataBucket
+          ENVIRONMENT: !Ref Environment
+      Tags:
+        - Key: Environment
+          Value: !Ref Environment
+        - Key: Service
+          Value: IR-CMDB
+
+Outputs:
+  DataBucketName:
+    Description: S3 bucket for IR data
+    Value: !Ref IRDataBucket
+
+  DataBucketArn:
+    Description: S3 bucket ARN
+    Value: !GetAtt IRDataBucket.Arn
+
+  CollectorFunctionName:
+    Description: Lambda function name
+    Value: !Ref IRCollectorFunction
+
+  CollectorFunctionArn:
+    Description: Lambda function ARN
+    Value: !GetAtt IRCollectorFunction.Arn
+
+  LambdaRoleName:
+    Description: Lambda execution role name
+    Value: !Ref IRLambdaRole
+
+  LambdaRoleArn:
+    Description: Lambda execution role ARN
+    Value: !GetAtt IRLambdaRole.Arn
