@@ -27,15 +27,83 @@ This proof-of-concept shows how to automate AWS context retrieval for IR and Sec
 
 
 
-## 💡 Why This Matters
+## 💡 Technical steps:
 
-Adversaries use the same APIs and methods as administrators and developers, and so context would make a difference in classifying bad actors. 
+*Use this project from a dedicated Ubuntu VM. 
 
- - 🔹 Speed Matters → We need context mapping in seconds, not minutes or hours.
- - 🔹 AI as a Force Multiplier → Any AI API can work with this, even DeepSeek :-) 
- - 🔹 Scalability → Works across small and large AWS environments.
- - 🔹 Automation & Integration → No more manual querying—let serverless do the work.
+Step 1 - install AWS cli and configure: 
 
 
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
 
-Cybersecurity is fundamentally a data challenge. Attackers move fast, but defenders can move faster. 
+
+aws configure 
+
+You can remove in the end the local cache: 
+rm ~/.aws/credentials
+rm ~/.aws/config
+
+
+
+
+Step 2 - clone our git repo:
+
+git clone https://github.com/tandemtrace-ai/AWSight-IR.git
+
+
+Configuration files:
+
+Web UI directories:
+AWSight-IR/webui/.env
+
+AI LLM API key:
+ AWSight-IR/webui/server/.env
+
+
+Run testing to make sure you have everything for the prerequisites:
+
+cd AWSight-IR/aws-ir
+./verify_aws.sh
+
+
+If verification was passed, run deployment:
+./run-ir-full.sh
+
+If the process is successful, then a JSON will be created with a unique timestamp like this:
+AWSight-IR/aws-ir/ir_data_20250210-085904.json
+
+
+Extra verifications and debugging:
+You can run each bash script with verbose mode - bash -x file.sh 
+
+You also have log files to inspect under the - AWSight-IR/aws-ir:
+
+deployment_timestamp.log
+response.json
+
+
+
+Step 4 - Web user Interface: 
+
+If you want the AI API to be working, you need to configure the .env file under:
+AWSight-IR/webui/server/.env 
+
+Then, to make it easy for the UI to run, we created a bash script that will install all packages, dependencies, and services to persist: 
+
+sudo bash -x ./setup_services_web.sh
+
+Check services and installation:
+sudo systemctl status awsight-web-front
+sudo systemctl status awsight-web-backend
+netstat -an | grep -E '8000|4173'
+
+
+If you have configured and installed everything correctly, then you will have access to the following: 
+http://x.x.x.x:4173/
+
+
+
+If you need to remove the services:
+sudo bash -x ./remove_services_web.sh
