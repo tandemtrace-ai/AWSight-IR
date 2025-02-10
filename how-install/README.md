@@ -73,27 +73,35 @@ AWSight-IR/webui/.env
 
 AI LLM API key:
 AWSight-IR/webui/server/.env
-``````
+```
 
 ### Fetch IR data:   
 
 Check AWS necessary configurations: 
 
+```shell
 cd AWSight-IR/aws-ir
 ./verify_aws.sh
+```
 
 Execute the stack:
 
+```shell
 If verification was passed, run deployment:
 ./run-ir-full.sh
+```
 
 ### Verification: 
 
 If the process is successful, then a JSON will be created with a unique timestamp like this:
+```shell
 AWSight-IR/aws-ir/ir_data_timestamp.json
+```
 
 Extra verifications and debugging:
-You can run each bash script with verbose mode - bash -x file.sh 
+```shell
+You can run each bash script with verbose mode - bash -x file.sh
+```
 
 You also have log files to inspect under the - AWSight-IR/aws-ir:
 deployment_timestamp.log
