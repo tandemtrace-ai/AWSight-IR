@@ -64,46 +64,49 @@ rm ~/.aws/config
 git clone https://github.com/tandemtrace-ai/AWSight-IR.git
 ```
 
-Configuration files:
+### Configuration files:
+
+```shell
 
 Web UI directories:
 AWSight-IR/webui/.env
 
 AI LLM API key:
- AWSight-IR/webui/server/.env
+AWSight-IR/webui/server/.env
+``````
 
+### Fetch IR data:   
 
-Run testing to make sure you have everything for the prerequisites:
+Check AWS necessary configurations: 
 
 cd AWSight-IR/aws-ir
 ./verify_aws.sh
 
+Execute the stack:
 
 If verification was passed, run deployment:
 ./run-ir-full.sh
 
-If the process is successful, then a JSON will be created with a unique timestamp like this:
-AWSight-IR/aws-ir/ir_data_20250210-085904.json
+### Verification: 
 
+If the process is successful, then a JSON will be created with a unique timestamp like this:
+AWSight-IR/aws-ir/ir_data_timestamp.json
 
 Extra verifications and debugging:
 You can run each bash script with verbose mode - bash -x file.sh 
 
 You also have log files to inspect under the - AWSight-IR/aws-ir:
-
 deployment_timestamp.log
 response.json
 
+## Step 3 - Web user Interface: 
 
-
-Step 4 - Web user Interface: 
-
-If you want the AI API to be working, you need to configure the .env file under:
+If you want your AI LLM API to be working, you need to configure the .env file under:
 AWSight-IR/webui/server/.env 
 
 Then, to make it easy for the UI to run, we created a bash script that will install all packages, dependencies, and services to persist: 
 
-sudo bash -x ./setup_services_web.sh
+sudo bash -x AWSight-IR/webui/setup_services_web.sh
 
 Check services and installation:
 sudo systemctl status awsight-web-front
