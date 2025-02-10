@@ -31,7 +31,7 @@ This proof-of-concept shows how to automate AWS context retrieval for IR and Sec
 
 *Use this project from a dedicated Ubuntu VM. 
 
-Step 1 - install AWS cli and configure: 
+## Step 1 - install AWS cli and configure: 
 
 ```shell
 # AWS CLI
@@ -42,16 +42,20 @@ sudo ./aws/install
 
 ```
 
-
-
-
+```shell
+# AWS configure permissions 
 
 aws configure 
 
-You can remove in the end the local cache: 
+```
+
+
+```shell
+# You can remove in the end the local cache: 
+
 rm ~/.aws/credentials
 rm ~/.aws/config
-
+```
 
 
 
