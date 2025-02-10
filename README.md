@@ -50,6 +50,6 @@ Adversaries use the same APIs and methods as administrators and developers, and 
 
 ## FULL INSTALLATION INSTRUCTIONS 
 
-How to Install - [Full Install](http://https://github.com/tandemtrace-ai/AWSight-IR/blob/main/how-install/README.md "Full Install")
+How to Install - [Full Install](https://github.com/tandemtrace-ai/AWSight-IR/blob/main/how-to-install/README.md "Full Install")
 
 Contact - hello@tandemtrace.ai
