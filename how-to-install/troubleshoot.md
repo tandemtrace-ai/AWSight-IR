@@ -22,3 +22,9 @@ If you need to remove the services:
 ```shell
 sudo bash -x ./remove_services_web.sh
 ```
+
+For the web user interface, you should have 2 services that need to be verified if needed: 
+```shell
+ sudo systemctl status awsight-web-backend
+ sudo systemctl status awsight-web-front
+```
