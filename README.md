@@ -16,7 +16,7 @@ This proof-of-concept shows how to automate AWS context retrieval for IR and Sec
 
 
 
-## How?
+## How it works?
 
  -   ✅ Uploads a Lambda function ZIP file to S3
  -   ✅ Deploys the necessary AWS infrastructure using CloudFormation.
