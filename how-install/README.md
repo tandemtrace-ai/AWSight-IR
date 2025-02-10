@@ -50,13 +50,6 @@ aws configure
 ```
 
 
-```shell
-# You can remove in the end the local cache: 
-
-rm ~/.aws/credentials
-rm ~/.aws/config
-```
-
 ## Step 2 - Install AWSight-IR git repo:
 
 ```shell
