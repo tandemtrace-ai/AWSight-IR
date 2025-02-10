@@ -57,12 +57,12 @@ rm ~/.aws/credentials
 rm ~/.aws/config
 ```
 
+## Step 2 - Install AWSight-IR git repo:
 
-
-Step 2 - clone our git repo:
+```shell
 
 git clone https://github.com/tandemtrace-ai/AWSight-IR.git
-
+```
 
 Configuration files:
 
