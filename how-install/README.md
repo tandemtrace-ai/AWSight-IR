@@ -33,10 +33,17 @@ This proof-of-concept shows how to automate AWS context retrieval for IR and Sec
 
 Step 1 - install AWS cli and configure: 
 
+```shell
+# AWS CLI
 
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 unzip awscliv2.zip
 sudo ./aws/install
+
+```
+
+
+
 
 
 aws configure 
