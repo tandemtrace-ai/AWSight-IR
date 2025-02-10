@@ -111,7 +111,7 @@ If you have configured and installed everything correctly, then you will have ac
 http://x.x.x.x:4173/
 ```
 
-### Verification: 
+### Troubleshooting: 
 
 If the process is successful, then a JSON will be created with a unique timestamp like this:
 ```shell
