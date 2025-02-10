@@ -5,7 +5,7 @@
 
 # AWSight-IR
 
-AWSight-IR leverages AWS native services and APIs to maintain fast visibility of your cloud infrastructure while providing powerful incident response capabilities using AI. 
+AWSight-IR is a free community project for AWS context retrieval intended to help IR teams. It leverages AWS native services and APIs to maintain fast visibility of your cloud infrastructure while providing powerful incident response capabilities using AI. 
 Adversaries use the same APIs and methods as administrators and developers, and so context would make a difference in classifying bad actors. 
 
 
