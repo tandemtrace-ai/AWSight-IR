@@ -104,28 +104,40 @@ You can run each bash script with verbose mode - bash -x file.sh
 ```
 
 You also have log files to inspect under the - AWSight-IR/aws-ir:
+```shell
 deployment_timestamp.log
 response.json
+```
 
 ## Step 3 - Web user Interface: 
 
 If you want your AI LLM API to be working, you need to configure the .env file under:
-AWSight-IR/webui/server/.env 
+```shell
+AWSight-IR/webui/server/.env
+```
 
 Then, to make it easy for the UI to run, we created a bash script that will install all packages, dependencies, and services to persist: 
 
+```shell
 sudo bash -x AWSight-IR/webui/setup_services_web.sh
+```
 
 Check services and installation:
+```shell
 sudo systemctl status awsight-web-front
 sudo systemctl status awsight-web-backend
 netstat -an | grep -E '8000|4173'
+```
 
 
 If you have configured and installed everything correctly, then you will have access to the following: 
+```shell
 http://x.x.x.x:4173/
+```
 
 
 
 If you need to remove the services:
+```shell
 sudo bash -x ./remove_services_web.sh
+```
